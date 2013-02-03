@@ -1,0 +1,67 @@
+/* Speed up your front-end development article by Roy Barber - http://roybarber.com
+
+Ignore the quality of this css, it was written as fast as possible
+
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+@viewport { width: device-width; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { color: #666; background: url(../img/core/body.jpg) repeat #313131; }
+
+.wrap { width: 800px; margin: 0 auto; background: #fff; }
+
+.remove-text { text-indent: -9999px; display: block; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+header:before, section:before, article:before, footer:before, header:after, section:after, article:after, footer:after { content: " "; display: table; }
+
+headercf:after, sectioncf:after, articlecf:after, footercf:after { clear: both; }
+
+header, section, article, footer { *zoom: 1; }
+
+header .core-logo { margin: 30px; }
+header nav { margin: 30px 30px 0; }
+header nav li { display: inline-block; *zoom: 1; }
+header nav li a { padding: 10px; color: #444; text-decoration: none; line-height: 40px; }
+header nav li a:hover { text-decoration: underline; }
+
+article { padding: 30px; }
+
+h2 { color: #444; font-size: 18px; font-weight: bold; margin-bottom: 20px; }
+
+p { font-size: 16px; line-height: 20px; margin: 0 0 20px 0; }
+
+footer { border-top: 1px solid #ccc; padding: 30px 30px 60px; }
+footer p { font-size: 14px; line-height: 40px; }
+footer ul li { display: inline-block; margin: 5px; }
+
+.core-sprite, .core-icon-facebook, .core-icon-linkedin, .core-icon-skype, .core-logo { background: url('../img/core-s323b60b8ee.png') no-repeat; }
+
+.core-icon-facebook { background-position: 0 -113px; height: 32px; width: 32px; }
+
+.core-icon-linkedin { background-position: 0 -81px; height: 32px; width: 32px; }
+
+.core-icon-skype { background-position: 0 -49px; height: 32px; width: 32px; }
+
+.core-logo { background-position: 0 0; height: 49px; width: 179px; }

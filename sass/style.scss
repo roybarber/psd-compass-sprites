@@ -1,0 +1,76 @@
+/* Speed up your front-end development article by Roy Barber - http://roybarber.com
+
+Ignore the quality of this css, it was written as fast as possible
+
+*/
+
+// Reset & Defaults
+@import "compass/reset";
+@viewport {
+    width: device-width;
+}
+@import "compass/css3";
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+body {
+	color: #666;
+	background: url(../img/core/body.jpg) repeat #313131;
+}
+.wrap {
+	width:800px;
+	margin:0 auto;
+	background: #fff;
+}
+.remove-text {
+	text-indent: -9999px;
+	display:block;
+}
+.left {float:left;}
+.right {float:right;}
+
+// Micro Clearfix
+header:before, section:before, article:before, footer:before,
+header:after, section:after, article:after, footer:after {content: " "; display: table;}
+headercf:after, sectioncf:after, articlecf:after, footercf:after {clear: both;}
+header, section, article, footer {*zoom: 1;}
+
+// header
+header {
+	.core-logo {margin: 30px;}
+	nav {
+		margin:30px 30px 0;
+		li {
+			display:inline-block;
+			*zoom:1;
+			a {padding:10px;color:#444;text-decoration: none;line-height: 40px;}
+			a:hover {text-decoration: underline;}
+		}	
+	}
+}
+
+// Content
+article {padding:30px;}
+h2 {color:#444;font-size: 18px;font-weight: bold;margin-bottom: 20px;}
+p {font-size: 16px;line-height: 20px;margin:0 0 20px 0;}
+
+// Footer
+footer {
+	border-top:1px solid #ccc;
+	padding: 30px 30px 60px;
+	
+	p {font-size: 14px;line-height: 40px;}
+	ul li {display:inline-block;margin:5px;}
+}
+
+// demo sprite generation - edit core with the name of the folder you wish to use
+// This tells compass to also print out the width & height into the css
+$core-sprite-dimensions: true;
+
+// Folder and file type to watch
+@import "core/*.png";
+
+// Include Sprites ito stylesheet
+@include all-core-sprites;
